@@ -66,6 +66,8 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 - Git (optional, for cloning)
 
 ### 1) Clone (or download)
-```bash
+```
+bash
 git clone https://github.com/GrimGPT/CoinCortex.git
 cd CoinCortex
+```
