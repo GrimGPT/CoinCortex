@@ -1,6 +1,4 @@
 ```python
-#!/usr/bin/env python3
-# CoinCortex demo entrypoint (Day 2) — self-contained, no external deps.
 
 import argparse
 import json
