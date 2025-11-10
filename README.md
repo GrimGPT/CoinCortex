@@ -48,6 +48,7 @@ CoinCortex is structured as a layered pipeline that ingests market data, enriche
       Position Manager & Auto-Trade Engine
 (entry %, SL/TP, partials, break-even, timers)
 ```
+
 ## Status
 Currently in deep testing & refactoring phase.  
 Live signal validation and multi-pair trading are functional.
@@ -57,7 +58,6 @@ This public repository is a **read-only showcase** of the system architecture an
 It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
 
 ## Installation & Setup
-
 > Demo mode runs locally without API keys or external services.  
 > It simulates the CoinCortex pipeline and prints a sample trade signal.
 
