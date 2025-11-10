@@ -1,4 +1,5 @@
-```python
+```
+python
 
 import argparse
 import json
@@ -127,3 +128,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+```
