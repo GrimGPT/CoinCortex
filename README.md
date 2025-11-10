@@ -26,6 +26,7 @@ CoinCortex is structured as a layered pipeline that ingests market data, enriche
 6. **Position Manager & Auto-Trade** — entry sizing, SL/TP logic, partial take-profit, safety checks
 
 ## High-Level Data Flow (ASCII)
+
 ```
    [ Binance ] [ CoinGlass ] [ DOM Collector ]
       \ | /        \ | /          \ | /
@@ -66,8 +67,26 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 - Git (optional, for cloning)
 
 ### 1) Clone (or download)
-```
-bash
+
+```bash
 git clone https://github.com/GrimGPT/CoinCortex.git
 cd CoinCortex
+```
+
+### 2) (Optional) Create a virtual environment
+
+```Windows (PowerShell)
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+```macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3) Run the demo
+
+```
+python main.py --demo
 ```
