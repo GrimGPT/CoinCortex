@@ -27,25 +27,25 @@ CoinCortex is structured as a layered pipeline that ingests market data, enriche
 
 ## High-Level Data Flow (ASCII)
 ```
-[ Binance ] [ CoinGlass ] [ DOM Collector ]
-   \ | /        \ | /          \ | /
-\ Data Processing Layer (RSI, MACD, EMA, OI, Funding, Volumes)
-________________________/
-|
-v
-GPT Analysis Core
-(GPT-5-mini / GPT-5 logic)
-|
-v
-Signal Evaluator
-(filters, thresholds)
-|
-v
-Telegram Notifier
-(alerts, status, error reports)
-|
-v
-Position Manager & Auto-Trade Engine
+   [ Binance ] [ CoinGlass ] [ DOM Collector ]
+      \ | /        \ | /          \ | /
+   \ Data Processing Layer (RSI, MACD, EMA, OI, Funding, Volumes)
+    ________________________/
+                     |
+                     v
+             GPT Analysis Core
+         (GPT-5-mini / GPT-5 logic)
+                     |
+                     v
+             Signal Evaluator
+          (filters, thresholds)
+                     |
+                     v
+            Telegram Notifier
+     (alerts, status, error reports)
+                     |
+                     v
+      Position Manager & Auto-Trade Engine
 (entry %, SL/TP, partials, break-even, timers)
 ```
 ## Status
