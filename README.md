@@ -55,3 +55,17 @@ Live signal validation and multi-pair trading are functional.
 ## Disclaimer
 This public repository is a **read-only showcase** of the system architecture and approach.  
 It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
+
+## Installation & Setup
+
+> Demo mode runs locally without API keys or external services.  
+> It simulates the CoinCortex pipeline and prints a sample trade signal.
+
+### Prerequisites
+- Python 3.11+ (Windows/macOS/Linux)
+- Git (optional, for cloning)
+
+### 1) Clone (or download)
+```bash
+git clone https://github.com/GrimGPT/CoinCortex.git
+cd CoinCortex
