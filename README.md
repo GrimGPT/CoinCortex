@@ -4,6 +4,15 @@ AI-Driven Crypto Trading Assistant
 CoinCortex is a modular AI trading system designed to analyze market data, generate signals, and execute trades automatically.  
 It integrates multiple data layers (Binance, CoinGlass, DOM Collector) and uses GPT-based models for strategic decision-making.
 
+## Table of Contents
+- [Features](#features)
+- [Stack](#stack)
+- [Architecture Overview](#architecture-overview)
+- [Modules Overview](#modules-overview)
+- [Installation & Setup](#installation--setup)
+- [Status](#status)
+- [Disclaimer](#disclaimer)
+
 ## Features
 - 🔍 Real-time market analysis (RSI, MACD, EMA, Volume)
 - 🤖 Signal evaluation with GPT (GPT-5-nano / GPT-5-mini / GPT-5)
@@ -83,8 +92,6 @@ CoinCortex is structured as a layered pipeline that ingests market data, enriche
 ### 4) Signal Evaluator
 - **signal_precheck.py** — hard guards (no active position, spread/filter checks)  
   *Input:* features + open positions • *Output:* pass/fail  
-- **case_matcher.py** — compares with past cases (pattern similarity)  
-  *Input:* recent case DB • *Output:* nearest cases summary  
 - **risk_filters.py** — thresholds (min confidence, RR, session/vol filters)  
   *Input:* analysis + strategy • *Output:* approved/review
 - **case_matcher.py** — compares new signals with historical cases using similarity search (RSI, EMA, DOM, volume patterns).  
