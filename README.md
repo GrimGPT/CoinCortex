@@ -9,7 +9,7 @@ It integrates multiple data layers (Binance, CoinGlass, DOM Collector) and uses 
 - [Stack](#stack)
 - [Architecture Overview](#architecture-overview)
 - [Modules Overview](#modules-overview)
-- [Roadmap](#coincortex-roadmap---full-engineering-edition)
+- [Roadmap](#coincortex-roadmap-full-engineering-edition)
 - [Installation & Setup](#installation--setup)
 - [Status](#status)
 - [Disclaimer](#disclaimer)
@@ -129,7 +129,7 @@ Live signal validation and multi-pair trading are functional.
 This public repository is a **read-only showcase** of the system architecture and approach.  
 It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
 
-## 🗺️ CoinCortex Roadmap — Full Engineering Edition
+## CoinCortex Roadmap Full Engineering Edition
 
 > This roadmap reflects the *actual internal status* of CoinCortex & DOM Collector  
 > — including data systems, AI core, execution engine, and case-learning modules.  
@@ -139,21 +139,21 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # ✅ PHASE 1 — CORE FOUNDATION *(Completed)*
 
-## 🔧 1.1. Repository & Architecture
+### 🔧 1.1. Repository & Architecture
 - [x] Project structure (utils/, cases/, configs/, engines/, data modules)
 - [x] Centralized time_utils (UTC, local, parsing)
 - [x] Settings manager (JSON + .env)
 - [x] Exception-safe startup & logging pipeline
 - [x] Clean GitHub structure with README, diagrams, modules overview
 
-## 🧩 1.2. Data Inputs (Initial Integration)
+### 🧩 1.2. Data Inputs (Initial Integration)
 - [x] Binance API (market data: klines, price, positions snapshot)
 - [x] CoinGlass API (OI, funding, long/short ratio, pairs metadata)
 - [x] Whale listener (Telethon-based)
 - [x] News Parser v2 core logic (RSS + Telegram)
 - [x] DOM Collector (external but integrated)
 
-## 🧪 1.3. Demo Mode for Public Repo
+### 🧪 1.3. Demo Mode for Public Repo
 - [x] `main.py --demo`
 - [x] Features → GPT → Evaluator → Telegram simulation
 - [x] Sample outputs, ASCII pipeline, consistent formatting
@@ -162,7 +162,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # ⚙️ PHASE 2 — DATA & FEATURE ENGINEERING *(Completed / Ongoing)*
 
-## 📊 2.1. Market Features
+### 📊 2.1. Market Features
 - [x] RSI (multi-TF)
 - [x] MACD (multi-TF)
 - [x] EMA7/25/99 (multi-TF)
@@ -173,7 +173,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 - [ ] Funding rate historical trend (planned)
 - [ ] Volume Profile (planned)
 
-## 🔁 2.2. DOM Collector (Independent Subsystem)
+### 🔁 2.2. DOM Collector (Independent Subsystem)
 - [x] Live order book snapshots every 5 seconds
 - [x] SQLite storage (high compression)
 - [x] Shadow Runner orchestration
@@ -184,7 +184,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 - [ ] DOM → CaseMatcher integration v2 (planned)
 - [ ] DOM-based entry validator (planned)
 
-## 🕯 2.3. Candle Emulator
+### 🕯 2.3. Candle Emulator
 - [x] Candle emulator v1 (engulfings, breakouts, compressions)
 - [ ] Candle emulator v2 (multi-TF, anomaly detection)
 
@@ -192,7 +192,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # 🤖 PHASE 3 — AI CORE & STRATEGY ENGINE *(Partially Complete)*
 
-## 🧠 3.1. GPT Integration
+### 🧠 3.1. GPT Integration
 - [x] o4-mini integration (replaced GPT-3.5)
 - [x] Prompt loader system (LONG/SHORT/Direction/Strategy)
 - [x] Strategy prompts (Scalp / Sniper / Swing)
@@ -201,7 +201,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 - [ ] Weight system for reasoning (DOM > Liquidations > News)
 - [ ] Multi-model ensemble (GPT-5-nano / 5-mini / 5)
 
-## 🧩 3.2. Case System
+### 🧩 3.2. Case System
 - [x] Case logger (auto after every trade)
 - [x] Unified case format (RSI/EMA/DOM/Funding/OI/Tags)
 - [x] CaseMatcher v1 (similarity via indicators + candles)
@@ -213,13 +213,13 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # ⚔️ PHASE 4 — SIGNAL EVALUATOR & RISK FILTERS *(Completed / Evolving)*
 
-## 🛡 4.1. Hard Filters
+### 🛡 4.1. Hard Filters
 - [x] Spread guard
 - [x] No-active-position guard
 - [x] Multi-pair cooldown registry
 - [x] No-entry during volatility spikes (basic)
 
-## 🔬 4.2. Signal Evaluator
+### 🔬 4.2. Signal Evaluator
 - [x] Confidence threshold
 - [x] Risk/Reward filter
 - [x] SL/TP validation
@@ -232,14 +232,14 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # 💰 PHASE 5 — EXECUTION & TRADE ENGINE *(Major Milestone Achieved)*
 
-## ⚙️ 5.1. Trade Execution
+### ⚙️ 5.1. Trade Execution
 - [x] Multi-pair trading support
 - [x] Entry percent logic (e.g., /entry 60)
 - [x] Auto-correction of entry (dynamic margin fallback)
 - [x] Full manual/auto modes
 - [x] Futures position snapshot & validation
 
-## 📈 5.2. Position Manager
+### 📈 5.2. Position Manager
 - [x] TP1 (50%) + TP2 (50%)
 - [x] Break-even shift after TP1
 - [x] TP2 timers (auto market exit)
@@ -253,14 +253,14 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # 🛰️ PHASE 6 — ORCHESTRATION & SYSTEM LAYER *(Mostly Complete)*
 
-## 📡 6.1. Telegram System
+### 📡 6.1. Telegram System
 - [x] Real-time signals formatting
 - [x] Distinct LONG/SHORT styling
 - [x] Error notifications
 - [x] Startup/shutdown messages
 - [x] GPT-data forwarding (debug mode)
 
-## 📰 6.2. News & Whale Infrastructure
+### 📰 6.2. News & Whale Infrastructure
 - [x] News parser v2 (Telegram + RSS)
 - [x] Tone detection (bullish / bearish / neutral)
 - [x] External event watcher concept
@@ -273,13 +273,13 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 # 🌐 PHASE 7 — PRODUCTIZATION & FUTURE VISION *(Planned)*
 
-## 🖥 7.1. UI / Dashboard
+### 🖥 7.1. UI / Dashboard
 - [ ] Web dashboard (React + FastAPI)
 - [ ] Live charts (Price + DOM + Indicators)
 - [ ] Case visualizer
 - [ ] News sentiment heatmap
 
-## 🌍 7.2. Ecosystem Extensions
+### 🌍 7.2. Ecosystem Extensions
 - [ ] External API for AI trading signals
 - [ ] Shared datasets for research
 - [ ] DeFi liquidation/MEV scanner
