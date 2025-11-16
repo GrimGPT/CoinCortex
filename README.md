@@ -9,7 +9,7 @@ It integrates multiple data layers (Binance, CoinGlass, DOM Collector) and uses 
 - [Stack](#stack)
 - [Architecture Overview](#architecture-overview)
 - [Modules Overview](#modules-overview)
-- [Roadmap](#coincortex-roadmap--full-engineering-edition)
+- [Roadmap](#coincortex-roadmap---full-engineering-edition)
 - [Installation & Setup](#installation--setup)
 - [Status](#status)
 - [Disclaimer](#disclaimer)
