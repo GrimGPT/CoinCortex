@@ -137,7 +137,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# ✅ PHASE 1 — CORE FOUNDATION *(Completed)*
+### ✅ PHASE 1 — CORE FOUNDATION *(Completed)*
 
 ### 🔧 1.1. Repository & Architecture
 - [x] Project structure (utils/, cases/, configs/, engines/, data modules)
@@ -160,7 +160,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# ⚙️ PHASE 2 — DATA & FEATURE ENGINEERING *(Completed / Ongoing)*
+### ⚙️ PHASE 2 — DATA & FEATURE ENGINEERING *(Completed / Ongoing)*
 
 ### 📊 2.1. Market Features
 - [x] RSI (multi-TF)
@@ -190,7 +190,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# 🤖 PHASE 3 — AI CORE & STRATEGY ENGINE *(Partially Complete)*
+### 🤖 PHASE 3 — AI CORE & STRATEGY ENGINE *(Partially Complete)*
 
 ### 🧠 3.1. GPT Integration
 - [x] o4-mini integration (replaced GPT-3.5)
@@ -211,7 +211,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# ⚔️ PHASE 4 — SIGNAL EVALUATOR & RISK FILTERS *(Completed / Evolving)*
+### ⚔️ PHASE 4 — SIGNAL EVALUATOR & RISK FILTERS *(Completed / Evolving)*
 
 ### 🛡 4.1. Hard Filters
 - [x] Spread guard
@@ -230,7 +230,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# 💰 PHASE 5 — EXECUTION & TRADE ENGINE *(Major Milestone Achieved)*
+### 💰 PHASE 5 — EXECUTION & TRADE ENGINE *(Major Milestone Achieved)*
 
 ### ⚙️ 5.1. Trade Execution
 - [x] Multi-pair trading support
@@ -251,7 +251,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# 🛰️ PHASE 6 — ORCHESTRATION & SYSTEM LAYER *(Mostly Complete)*
+### 🛰️ PHASE 6 — ORCHESTRATION & SYSTEM LAYER *(Mostly Complete)*
 
 ### 📡 6.1. Telegram System
 - [x] Real-time signals formatting
@@ -271,7 +271,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# 🌐 PHASE 7 — PRODUCTIZATION & FUTURE VISION *(Planned)*
+### 🌐 PHASE 7 — PRODUCTIZATION & FUTURE VISION *(Planned)*
 
 ### 🖥 7.1. UI / Dashboard
 - [ ] Web dashboard (React + FastAPI)
@@ -287,8 +287,8 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 
 ---
 
-# 🕓 Last Updated: November 2025
-# 📌 Next Big Milestone:
+### 🕓 Last Updated: November 2025
+### 📌 Next Big Milestone:
 **CaseMatcher v2 + DOM integrated reasoning + strategy weights system.**
 
 ## 📟 Demo Output Example
