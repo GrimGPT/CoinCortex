@@ -291,6 +291,91 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 # 📌 Next Big Milestone:
 **CaseMatcher v2 + DOM integrated reasoning + strategy weights system.**
 
+## 📟 Demo Output Example
+
+Below is an example output produced by:
+
+```bash
+python main.py --demo
+```
+This illustrates the entire CoinCortex pipeline:
+Data → Indicators → AI Analysis → Signal Evaluation → Telegram-style message.
+```
+CoinCortex Demo Mode
+------------------------------------------------------------
+
+[ Binance ]   [ CoinGlass ]   [ DOM Collector ]
+        \           |                /
+         \          |               /
+          \         |              /
+     Data Processing Layer (RSI, MACD, EMA, OI, Funding, Volumes)
+     ________________________/
+                 |
+                 v
+         GPT Analysis Core
+        (o4-mini / GPT-5 logic)
+                 |
+                 v
+           Signal Evaluator
+          (filters, thresholds)
+                 |
+                 v
+          Telegram Notifier
+    (alerts, status, error reports)
+                 |
+                 v
+   Position Manager & Auto-Trade Engine
+ (entry %, SL/TP, partials, break-even, timers)
+
+== Data Processing Layer ==
+Sample features:
+{
+  "symbol": "BTCUSDT",
+  "rsi_5m": 28.7,
+  "macd_5m": { "macd": -12.1, "signal": -10.4, "hist": -1.7 },
+  "ema_order_5m": [7, 25, 99],
+  "volume_5m_avg": 1230000.0,
+  "oi_delta_15m": -0.8,
+  "funding": 0.0001
+}
+
+== GPT Analysis Core ==
+{
+  "direction": "LONG",
+  "confidence": 0.924,
+  "reasons": [
+    "RSI(5m) oversold zone",
+    "EMA order indicates short-term weakness",
+    "Rising negative MACD histogram",
+    "OI decreasing (risk-off behavior)"
+  ]
+}
+
+== Signal Evaluator ==
+{
+  "approved": true,
+  "tp": [
+    { "target": "TP1", "delta_pct": 0.35 },
+    { "target": "TP2", "delta_pct": 0.85 }
+  ],
+  "sl": { "target": "SL", "delta_pct": -0.45 },
+  "rr": 2.67
+}
+
+== Telegram Notifier (simulated) ==
+📢 CoinCortex — APPROVED ✅
+🧭 Direction: LONG
+💠 Symbol: BTCUSDT
+🔒 Confidence: 92%
+🎯 Targets: TP1 0.35%, TP2 0.85%
+🛡 SL: -0.45%
+⚖️ R/R: 2.67
+📌 Reasons: RSI oversold; EMA weakening; MACD recovery; OI drop
+```
+This output is fully generated offline without API keys —
+the demo simulates the full decision-making pipeline of CoinCortex.
+
+
 ## Installation & Setup
 > Demo mode runs locally without API keys or external services.  
 > It simulates the CoinCortex pipeline and prints a sample trade signal.
