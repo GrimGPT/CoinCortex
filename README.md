@@ -10,6 +10,7 @@ It integrates multiple data layers (Binance, CoinGlass, DOM Collector) and uses 
 - [Architecture Overview](#architecture-overview)
 - [Modules Overview](#modules-overview)
 - [Roadmap](#coincortex-roadmap-full-engineering-edition)
+- [Contributing](#contributing)
 - [Installation & Setup](#installation--setup)
 - [Status](#status)
 - [Disclaimer](#disclaimer)
@@ -120,14 +121,6 @@ CoinCortex is structured as a layered pipeline that ingests market data, enriche
 - **case_logger.py** — writes finished trades as compact cases (JSON)
 
 > **Demo status:** The public repo contains a self-contained demo (`main.py --demo`) that simulates the pipeline without live keys/exchange access. Private trading logic remains in closed source.
-
-## Status
-Currently in deep testing & refactoring phase.  
-Live signal validation and multi-pair trading are functional.
-
-## Disclaimer
-This public repository is a **read-only showcase** of the system architecture and approach.  
-It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
 
 ## CoinCortex Roadmap Full Engineering Edition
 
@@ -291,8 +284,7 @@ It does **not** contain private trading logic, credentials, or live keys. Use at
 ### 📌 Next Big Milestone:
 **CaseMatcher v2 + DOM integrated reasoning + strategy weights system.**
 
-## 📟 Demo Output Example
-
+## Demo Output Example
 Below is an example output produced by:
 
 ```bash
@@ -375,6 +367,18 @@ Sample features:
 This output is fully generated offline without API keys —
 the demo simulates the full decision-making pipeline of CoinCortex.
 
+## Contributing
+Issues and feature requests are welcome.  
+Use the templates in `.github/ISSUE_TEMPLATE/` for:
+
+- 🐞 Bug reports  
+- 🚀 Feature ideas  
+- ❓ Questions / clarifications  
+
+Pull requests are accepted for:
+- Documentation improvements  
+- Non-sensitive code (demo mode, utilities)  
+- Test coverage  
 
 ## Installation & Setup
 > Demo mode runs locally without API keys or external services.  
@@ -408,3 +412,12 @@ source .venv/bin/activate
 ```
 python main.py --demo
 ```
+
+## Status
+Currently in deep testing & refactoring phase.  
+Live signal validation and multi-pair trading are functional.
+
+## Disclaimer
+This public repository is a **read-only showcase** of the system architecture and approach.  
+It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
+
