@@ -1,4 +1,10 @@
 # CoinCortex (Public)
+
+![status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
+![license](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![python](https://img.shields.io/badge/Python-3.11+-yellow?style=flat-square)
+![ai](https://img.shields.io/badge/AI-GPT%20Driven-purple?style=flat-square)
+
 AI-Driven Crypto Trading Assistant
 
 CoinCortex is a modular AI trading system designed to analyze market data, generate signals, and execute trades automatically.  
