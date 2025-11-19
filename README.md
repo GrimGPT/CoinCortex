@@ -423,6 +423,9 @@ python main.py --demo
 Currently in deep testing & refactoring phase.  
 Live signal validation and multi-pair trading are functional.
 
+### 📄 License
+This project is licensed under the MIT License — see the `LICENSE` file for details.
+
 ## Disclaimer
 This public repository is a **read-only showcase** of the system architecture and approach.  
 It does **not** contain private trading logic, credentials, or live keys. Use at your own risk.
