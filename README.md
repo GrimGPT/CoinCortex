@@ -19,6 +19,7 @@ It integrates multiple data layers (Binance, CoinGlass, DOM Collector) and uses 
 - [Contributing](#contributing)
 - [Installation & Setup](#installation--setup)
 - [Status](#status)
+- [License](#license)
 - [Disclaimer](#disclaimer)
 
 ## Features
@@ -423,7 +424,7 @@ python main.py --demo
 Currently in deep testing & refactoring phase.  
 Live signal validation and multi-pair trading are functional.
 
-### 📄 License
+## License
 This project is licensed under the MIT License — see the `LICENSE` file for details.
 
 ## Disclaimer
